@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #313131;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgb(29, 29, 29);
+  border: 1px solid;
+  color: white;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  object-fit: cover;
+
+    width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.role {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.stats h3 {
+  margin: 0;
+}
+
+button {
+  background: #05663e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+.cursor{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(9, 100, 55);
+    border-radius: 50%;
+}
+</style>
+<body>
+
+    <div class="cursor"></div>
+<div class="card">
+  <img src="https://imgs.search.brave.com/qpO_Qx69mkdzNERGAgKqD8ew6rQvk1k8ggIbEN09sy4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE2/MDU0NTQ0OC9waG90/by95b3VuZy1tYW4t/c29mdHdhcmUtZGV2/ZWxvcGVycy1mb3It/YWktdGVjaG5vbG9n/eS1zbWlsaW5nLWFu/ZC1sb29raW5nLWF0/LWNhbWVyYS1zaXR0/aW5nLWF0LWRlc2su/d2VicD9hPTEmYj0x/JnM9NjEyeDYxMiZ3/PTAmaz0yMCZjPThT/U2tCN1BQc3VUNVIx/akFxRWpLcEpGV0Y0/M3lMLTM4bDMzUGxS/Y1Qxczg9" alt="Profile">
+  <h2>John Doe</h2>
+  <p class="role">Frontend Developer</p>
+
+  <div class="stats">
+    <div>
+      <h3></h3>
+      <p>Followers</p>
+    </div>
+    <div>
+      <h3>350</h3>
+      <p>Following</p>
+    </div>
+  </div>
+
+  <button id="followBtn">Follow</button>
+</div>
+
+
+    <script src="followandunfollow.js"></script>
+</body>
+</html>
